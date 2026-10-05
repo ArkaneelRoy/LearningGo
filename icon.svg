@@ -1,0 +1,112 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="100%" height="100%">
+  <!-- Transparent Background / Clean App Icon Style -->
+
+  <defs>
+    <!-- Gopher Classic Blue Gradient -->
+    <linearGradient id="gopherBlue" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#72d7e9"/>
+      <stop offset="100%" stop-color="#29b6f6"/>
+    </linearGradient>
+
+    <!-- Ear / Snout Tan Color -->
+    <linearGradient id="skinTan" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#fce8d5"/>
+      <stop offset="100%" stop-color="#f5ceab"/>
+    </linearGradient>
+
+    <!-- Hardware Register Glow -->
+    <filter id="chipGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+  </defs>
+
+  <!-- Left Ear -->
+  <g>
+    <ellipse cx="145" cy="155" rx="34" ry="34" fill="#29b6f6" stroke="#103e5c" stroke-width="6"/>
+    <ellipse cx="145" cy="155" rx="20" ry="20" fill="url(#skinTan)"/>
+  </g>
+
+  <!-- Right Ear -->
+  <g>
+    <ellipse cx="355" cy="155" rx="34" ry="34" fill="#29b6f6" stroke="#103e5c" stroke-width="6"/>
+    <ellipse cx="355" cy="155" rx="20" ry="20" fill="url(#skinTan)"/>
+  </g>
+
+  <!-- Feet -->
+  <ellipse cx="180" cy="445" rx="38" ry="22" fill="url(#skinTan)" stroke="#103e5c" stroke-width="6"/>
+  <ellipse cx="320" cy="445" rx="38" ry="22" fill="url(#skinTan)" stroke="#103e5c" stroke-width="6"/>
+
+  <!-- Main Gopher Body (Renée French Silhouette) -->
+  <path d="M 135 240 
+           C 125 150, 375 150, 365 240 
+           C 375 350, 370 440, 250 440 
+           C 130 440, 125 350, 135 240 Z" 
+        fill="url(#gopherBlue)" 
+        stroke="#103e5c" 
+        stroke-width="7" 
+        stroke-linejoin="round"/>
+
+  <!-- Left Eye -->
+  <g>
+    <ellipse cx="195" cy="205" rx="38" ry="42" fill="#ffffff" stroke="#103e5c" stroke-width="6"/>
+    <ellipse cx="185" cy="205" rx="14" ry="16" fill="#103e5c"/>
+    <ellipse cx="180" cy="198" rx="5" ry="6" fill="#ffffff"/>
+  </g>
+
+  <!-- Right Eye (Low-Level Systems HUD Monocle Mod) -->
+  <g>
+    <ellipse cx="305" cy="205" rx="38" ry="42" fill="#ffffff" stroke="#103e5c" stroke-width="6"/>
+    <ellipse cx="295" cy="205" rx="14" ry="16" fill="#103e5c"/>
+    <ellipse cx="290" cy="198" rx="5" ry="6" fill="#ffffff"/>
+    
+    <!-- Monocle Ring & Crosshair Reticle -->
+    <circle cx="305" cy="205" r="41" fill="#00e5ff" fill-opacity="0.22" stroke="#00e5ff" stroke-width="4.5" filter="url(#chipGlow)"/>
+    <circle cx="305" cy="205" r="26" fill="none" stroke="#00e5ff" stroke-width="1.8" stroke-dasharray="8 5"/>
+    <circle cx="305" cy="205" r="5" fill="#00e5ff"/>
+    <path d="M 346 205 L 358 205" stroke="#00e5ff" stroke-width="3" stroke-linecap="round"/>
+    <path d="M 305 164 L 305 152" stroke="#00e5ff" stroke-width="3" stroke-linecap="round"/>
+  </g>
+
+  <!-- Snout & Buck Teeth -->
+  <g>
+    <!-- Teeth -->
+    <rect x="236" y="258" width="13" height="20" rx="3" fill="#ffffff" stroke="#103e5c" stroke-width="4"/>
+    <rect x="251" y="258" width="13" height="20" rx="3" fill="#ffffff" stroke="#103e5c" stroke-width="4"/>
+    
+    <!-- Snout Pad -->
+    <ellipse cx="250" cy="245" rx="34" ry="22" fill="url(#skinTan)" stroke="#103e5c" stroke-width="5"/>
+    
+    <!-- Nose -->
+    <ellipse cx="250" cy="235" rx="13" ry="9" fill="#103e5c"/>
+  </g>
+
+  <!-- Hands Holding an ALU Microchip -->
+  <g>
+    <!-- Chip Pins (Left & Right) -->
+    <path d="M 205 342 L 195 342
+             M 205 354 L 195 354
+             M 205 366 L 195 366
+             M 295 342 L 305 342
+             M 295 354 L 305 354
+             M 295 366 L 305 366" 
+          stroke="#ffb74d" stroke-width="3.5" stroke-linecap="round"/>
+
+    <!-- Silicon Chip Body -->
+    <rect x="205" y="330" width="90" height="48" rx="8" fill="#1e293b" stroke="#0ea5e9" stroke-width="3.5"/>
+    <circle cx="218" cy="342" r="3" fill="#38bdf8"/>
+    
+    <!-- Minimalist Binary / Gate Indicator on Chip -->
+    <rect x="228" y="348" width="8" height="12" rx="2" fill="#38bdf8" opacity="0.9"/>
+    <rect x="241" y="348" width="8" height="12" rx="2" fill="#38bdf8" opacity="0.4"/>
+    <rect x="254" y="348" width="8" height="12" rx="2" fill="#38bdf8" opacity="0.9"/>
+    <rect x="267" y="348" width="8" height="12" rx="2" fill="#38bdf8" opacity="0.9"/>
+
+    <!-- Left & Right Paws clamping the chip -->
+    <ellipse cx="198" cy="354" rx="18" ry="15" fill="url(#skinTan)" stroke="#103e5c" stroke-width="5"/>
+    <ellipse cx="302" cy="354" rx="18" ry="15" fill="url(#skinTan)" stroke="#103e5c" stroke-width="5"/>
+  </g>
+
+  <!-- Belly Accent Trace Lines (Subtle Hardware Bus on Tummy) -->
+  <path d="M 230 405 Q 250 415 270 405" fill="none" stroke="#103e5c" stroke-width="3" stroke-linecap="round" opacity="0.3"/>
+</svg>
